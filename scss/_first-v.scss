@@ -1,0 +1,79 @@
+.first-v {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  @include sp {
+    top: 419px;
+    left: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 882px;
+  }
+}
+
+.first-v_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 38px;
+  width: 100%;
+  @include sp {
+    top: 1000px;
+    left: 180px;
+    z-index: 100;
+    position: absolute;
+    flex-direction: column-reverse;
+  }
+  &__heir {
+    font-family: ヒラギノ明朝 Pro;
+    height: 38px;
+    width: 326px;
+    margin: 296px 163px 48px 105px;
+    @include sp {
+      margin: 0;
+      z-index: 100;
+      width: 300px;
+      margin-bottom: 332px;
+      margin-left: 62px;
+    }
+  }
+  &__we {
+    font-family: Zapfino;
+    height: 128px;
+    width: 390px;
+    margin: 48px 107px 290px 97px;
+    @include sp {
+      width: 350px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+  @include sp {
+    display: flex;
+    color: #fff;
+    transform: translate(-10%, -204%);
+  }
+}
+
+.first-v__img {
+  width: 100%;
+  @include sp {
+    width: 600px;
+    transform: translate(0%, -47%);
+  }
+  .mating {
+    width: 100%;
+    height: 845px;
+    object-fit: cover;
+    @include sp {
+      width: 600px;
+      height: 810px;
+      object-fit: cover;
+    }
+  }
+}

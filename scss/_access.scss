@@ -1,0 +1,57 @@
+.access {
+  width: 100%;
+  background-color: #a193861f;
+  height: 757px;
+  @include sp {
+    width: 600px;
+    height: 1000px;
+  }
+}
+
+.access-wrap {
+  display: flex;
+  justify-content: space-between;
+  @include sp {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.open-wrap {
+  width: 40%;
+  height: 396px;
+  background-color: #d0c5ba;
+  @include sp {
+    width: 600px;
+    height: 296px;
+  }
+}
+
+.shop {
+  margin-top: 101px;
+  margin-left: 104px;
+  font-size: 24px;
+  color: #00000038;
+  @include sp {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+
+.time p {
+  margin-top: 30px;
+  margin-left: 104px;
+  font-size: 16px;
+  color: white;
+  @include sp {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+.map {
+  width: 60%;
+  height: 396px;
+  @include sp {
+    width: 600px;
+  }
+}

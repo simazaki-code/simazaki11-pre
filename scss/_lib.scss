@@ -1,0 +1,32 @@
+//////////////
+//   mixin  //
+//////////////
+
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+//////////////
+//   共通  //
+//////////////
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 1283px;
+  font-size: 16px;
+}

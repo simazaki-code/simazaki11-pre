@@ -1,0 +1,109 @@
+.concept {
+  background: linear-gradient(
+    0deg,
+    #a1938689 0%,
+    #a1938689 50%,
+    #a193861f 50%,
+    #a193861f 100%
+  );
+  @include sp {
+    width: 600px;
+    padding: 0 20px;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  @include sp {
+    width: 560px;
+    margin: 0;
+  }
+  &--bold {
+    margin-top: 256px;
+    @include sp {
+      margin: 0;
+    }
+  }
+  &:after {
+    content: "title--bold";
+    display: inline-block;
+    border-top: 1px solid #707070;
+    width: 99px;
+    margin-left: 1.7rem;
+    margin-top: 256px;
+    @include sp {
+      margin: 60px 0;
+    }
+  }
+}
+
+.concept-img__wrap {
+  display: flex;
+  justify-content: center;
+  @include sp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    transform: translate(-40%, 0);
+  }
+}
+
+.concept-img__1 {
+  margin-right: 11px;
+  @include sp {
+    width: 50%;
+    transform: translate(-58%, 0);
+  }
+}
+
+.concept-img__2 {
+  @include sp {
+    width: 164px;
+    transform: translate(81%, 0);
+  }
+  .child {
+    @include sp {
+      width: 274px;
+      height: 412px;
+      object-fit: cover;
+    }
+  }
+}
+
+.concept-wrap {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  letter-spacing: 16px;
+  height: 560px;
+  @include sp {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    height: 42px;
+    width: 445px;
+    font-size: 40px;
+    font-family: ヒラギノ明朝 Pro;
+    margin: 92px 57px 129px 174px;
+    @include sp {
+      font-size: 18px;
+      margin: 50px 88px 0px 145px;
+    }
+  }
+  &__text {
+    height: 130px;
+    width: 422px;
+    font-size: 16px;
+    font-family: ヒラギノ角ゴ Pro;
+    margin: 69px 184px 64px 0;
+    line-height: 30px;
+    @include sp {
+      margin: 18px 21px 279px 64px;
+    }
+  }
+}

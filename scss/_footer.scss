@@ -1,0 +1,77 @@
+footer {
+  @include sp {
+    width: 600px;
+  }
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  width: 1066px;
+  height: 160px;
+  margin: 200px 107px 0 107px;
+  border-top: 1px solid #70707036;
+  @include sp {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 51px 40px;
+    width: 500px;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  color: #7070704d;
+  @include sp {
+    display: inline-block;
+    margin: -23px 264px 0 0;
+  }
+}
+
+small {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 20px;
+  height: 19px;
+  color: black;
+  @include sp {
+  }
+}
+
+small {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 20px;
+  height: 19px;
+  color: black;
+  @include sp {
+  }
+}
+
+.fa-twitter:before {
+  content: "\f099";
+  margin-left: 20px;
+  @include sp {
+    margin: 0px 200px 0px 548px;
+  }
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+  margin-right: 590px;
+  margin-left: 20px;
+  @include sp {
+    display: inline-block;
+    margin: 0px 97px 0px 548px;
+    margin-top: 20px;
+  }
+}
+
+.reserve {
+  padding: 10px 41px;
+  border: 1px solid #707070;
+  color: #707070;
+  @include sp {
+    margin-top: 51px;
+  }
+}
